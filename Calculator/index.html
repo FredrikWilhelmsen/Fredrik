@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Fancy Calculator</title>
+                
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/Favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/Favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/Favicon/manifest.json">
+        <link rel="mask-icon" href="img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="stylesheet" href="css/css.css">
+        
+    </head>
+
+    <body>
+    
+        <heading>
+            <h1 id="title" class="jumbotron">Fancy Calculator</h1>
+        </heading>
+
+        <div id="center">
+            
+            <div id="calculator">
+
+                <!--Display bar-->
+                <div id="display">
+                    <div id="text">0</div>       
+                </div>
+
+                <!--Row 1-->
+                <div>
+                    <button class="numButton">7</button>
+                    <button class="numButton">8</button>
+                    <button class="numButton">9</button>
+                    <button class="operator">/</button>
+                    <button class="func">A</button>
+                    <button class="func" id="+-"><img src="img/+-.png" width="50"></button>
+                </div>
+
+                <!--Row 2-->
+                <div>
+                    <button class="numButton">4</button>
+                    <button class="numButton">5</button>
+                    <button class="numButton">6</button>
+                    <button class="operator">*</button>
+                    <button class="func">CE</button>
+                    <button class="func">!</button>
+                </div>
+
+                <!--Row 3-->
+                <div>
+                    <button class="numButton">1</button>
+                    <button class="numButton">2</button>
+                    <button class="numButton">3</button>
+                    <button class="operator">-</button>
+                    <button class="func">C</button>
+                    <button class="operator">^</button>
+                </div>
+
+                <!--Row 4-->
+                <div>
+                    <button class="func">.</button>
+                    <button class="numButton">0</button>
+                    <button class="func">&lt;</button>
+                    <button class="operator">+</button>
+                    <button class="func">=</button>
+                    <button class="func" id="sqrt"><img src="img/Sqrt.png" width="50"></button>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <footer>
+            <h2 class="jumbotron" id="footer">Created by Fredrik Wilhelmsen <br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Zeph.cf</a></h2>
+        </footer>
+        
+        <script src="js/script.js"></script>
+        
+    </body>
+
+</html>

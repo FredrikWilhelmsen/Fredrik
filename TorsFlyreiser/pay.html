@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd2622">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#cd2622">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tors Flyreiser</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin: auto;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #efefef;
+        }
+        
+        #navbar{
+            background-color: #e20909;
+        }
+        
+        .button {
+            display: block;
+            margin: auto;
+            width: 300px;
+        }
+        
+        #block {
+            text-align: center;
+        }
+        
+        .block {
+            display: inline-block;
+        }
+        
+        .input {
+            display: none;
+        }
+        
+        #pay1 {
+            display: none;
+        }
+        
+        #pay {
+            display: none;
+        }
+        
+        #pay2 {
+            display: none;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        #cpr {
+            text-align: left;
+        }
+        
+        #pop {
+            display: none;
+            border: solid 2px;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+        }
+        
+        #bar {
+            background-color: #e20909;
+            display: inherit;
+            width: 100%;
+            height: 15%;
+        }
+        
+        #msg {
+            width: 50%;
+            padding-top: 10%;
+            text-align: center;
+            display: inline-block;
+            font-size: 30px;
+        }
+        
+        #button {
+            background-color: #e20909;
+            width: 20%;
+            height: 15%;
+            position: absolute;
+            top: 75%;
+            left: 70%;
+        }
+        
+        #text {
+            color: white;
+            margin-top: 8%;
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        #title {
+            color: white;
+            margin-right: 70%;
+            display: inline-block;
+            font-size: 30px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html" style="color:white;">Hjem</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="order.html" style="color:white;">Bestill</a>
+                        </li>
+                        <li>
+                            <a href="info.html" style="color:white;">Info</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Image Background Page Header -->
+        <!-- Note: The background image is set within the business-casual.css file. -->
+        <header class="business-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="tagline" style="text-align:left;">Skyhøye priser</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <hr>
+
+            <div id="block">
+
+                <div class="block">
+
+                    <div id="f1" class="input">
+
+                        <table>
+                            <tr>
+                                <th>Reykjavik</th>
+                                <th>Antall</th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for barn under 6 år</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for barn mellom 6 og 12 år</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for studenter eller pensjonister</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for voksne</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="block">
+
+                    <div id="f2" class="input">
+
+                        <table>
+                            <tr>
+                                <th>Edinburgh</th>
+                                <th>Antall</th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for barn under 6 år</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for barn mellom 6 og 12 år</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for studenter eller pensjonister</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Billetter for voksne</th>
+                                <th><form><input type="number" min="0" max="20" value="0" onkeypress="return event.keyCode!=13"></form></th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>    
+
+                <div class="block">
+
+                    <div id="f3" class="input">
+
+                        <table>
+                            <tr>
+                                <th>Gruppetur</th>
+                                <th>Valg</th>
+                            </tr>
+                            <tr>
+                                <th>Destinasjon</th>
+                                <th><select id="destinationInput"><option value="Tromsø">Tromsø</option><option value="Bergen">Bergen</option><option value="Oslo">Oslo</option><option value="Stockholm">Stockholm</option><option value="Helsinki">Helsinki</option></select></th>
+                            </tr>
+                            <tr>
+                                <th>Antall billetter</th>
+                                <th><form><input type="number" min="1" max="20" value="1" id="ticketsInput"></form></th>
+                            </tr>
+                            <tr>
+                                <th>Luksuspakke med kanapeer og sjampane</th>
+                                <th><form id="L"><input type="radio" name="L" checked="checked">Ingen<br><input type="radio" name="L">Dit<br><input type="radio" name="L">Tilbake<br><input type="radio" name="L">Begge veier<br></form></th>
+                            </tr>
+                            <tr>
+                                <th>Dag</th>
+                                <th><select id="day"><option value="1">Mandag</option><option value="3">Onsdag</option><option value="5">Fredag</option><option value="6">Lørdag</option><option value="0">Søndag</option></select></th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <img src="img/order%20btn.png" class="button" id="orderButton">
+
+            </div>
+
+            <div id="pay">
+
+                <div class="block">
+                    <table id="pay1">
+                        <tr>
+                            <th id="location"></th>
+                            <th>Bekreftelse</th>
+                        </tr>
+                        <tr>
+                            <th>Billetter for barn under 6 år</th>
+                            <th class="outputTickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Billetter for barn mellom 6 og 12 år</th>
+                            <th class="outputTickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Billetter for studenter eller pensjonister</th>
+                            <th class="outputTickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Billetter for voksne</th>
+                            <th class="outputTickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Antall billetter</th>
+                            <th id="sumTickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Avgangsdato</th>
+                            <th id="date1"></th>
+                        </tr>
+                        <tr>
+                            <th>Pris</th>
+                            <th id="price1"></th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="block">
+                    <table id="pay2">
+                        <tr>
+                            <th>Gruppetur</th>
+                            <th>Bekreftelse</th>
+                        </tr>
+                        <tr>
+                            <th>Destinasjon</th>
+                            <th id="destination"></th>
+                        </tr>
+                        <tr>
+                            <th>Antall billetter</th>
+                            <th id="tickets"></th>
+                        </tr>
+                        <tr>
+                            <th>Avgangsdato</th>
+                            <th id="date2"></th>
+                        </tr>
+                        <tr>
+                            <th>Pris</th>
+                            <th id="price2"></th>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <hr>
+
+                <img src="img/order%20btn.png" class="button" id="confirmButton">
+
+            </div>
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="cpr">Copyright &copy; Tors Flyreiser 2017</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+        </div>
+    </div>
+    
+    <div id="pop">
+        <div id="bar">
+            <p id="title">Tors Flyreiser</p>
+        </div>
+        <div id="msg">
+            
+        </div>
+        <div id="button">
+            <p id="text">OK</p>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom Javascript -->
+    <script src="js/payscript.js"></script>
+
+</body>
+
+</html>

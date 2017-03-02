@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(140, 140, 140);
+}
+
+#title {
+    text-align: center;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    font-family: fantasy;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(48, 48, 48);
+    font-family: fantasy;
+}
+
+#footer a {
+    font-family: sans-serif;
+}
+
+#center {
+    text-align: center;
+}
+
+#calculator {
+    background-color: #4CAF50;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 580px;
+    display: inline-block;
+}
+
+.numButton {
+    color: white;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.operator {
+    color: rgb(255, 153, 0);
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.func {
+    color: rgb(255, 153, 0);
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#display {
+    height: 80px;
+    width: 500px;
+    background-color: rgb(226, 225, 222);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+#display #text {
+    padding-top: 20px;
+    padding-right: 15px;
+    font-family: inherit;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+}
