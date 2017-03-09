@@ -1,0 +1,11 @@
+#border {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    top: 75px;
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+}
