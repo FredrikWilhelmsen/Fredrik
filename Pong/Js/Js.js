@@ -26,6 +26,7 @@ var game = {
     bglh : ScreenHeight / 20,
     ballSpeed : ScreenWidth / 165,
     ballSize : ScreenWidth / 50,
+    ballAcceleration : 1.0002,
     paddleSpeed : ScreenWidth / 165,
     paddleSize : ScreenWidth / 7,
     scoreToWin : 5,
@@ -412,9 +413,11 @@ class Paddle {
 }
 
 class Ball {
-    constructor(size, color, speed){
+    constructor(size, color, speed, acc){
         this.size = size;
         this.color = color;
+        this.acc = acc;
+        this.startSpeed = speed;
         this.speed = speed;
         this.scene = "game";
         this.x;
@@ -425,6 +428,8 @@ class Ball {
     }
     
     spawn(){
+        //Reset speed
+        this.speed = this.startSpeed;
         //Create and rotate vector by a random angle
         var max = 60;
         var min = 0;
@@ -521,6 +526,10 @@ class Ball {
             //Move the ball
             this.y += this.vector.y;
             this.x += this.vector.x;
+            
+            this.vector.x *= this.acc;
+            this.vector.y *= this.acc;
+            this.speed *= this.acc;
             
             //Check to see if the ball is outside the bounds of the field
             if(this.x > ScreenWidth){
@@ -663,7 +672,7 @@ var initialize = function(code){
     
     //Add one ball to the game, will add setting to add more balls
     for(var index = 0; index < sliders[findId("balls")].value; index++){
-        balls.push(new Ball(game.ballSize * sliders[findId("ballsize")].value / 100, rgb(sliders[findId("ballred")].value, sliders[findId("ballgreen")].value, sliders[findId("ballblue")].value), game.ballSpeed * sliders[findId("ballspeed")].value / 100));
+        balls.push(new Ball(game.ballSize * sliders[findId("ballsize")].value / 100, rgb(sliders[findId("ballred")].value, sliders[findId("ballgreen")].value, sliders[findId("ballblue")].value), game.ballSpeed * sliders[findId("ballspeed")].value / 100, game.ballAcceleration * sliders[findId("ballacc")].value / 100));
     }
 };
 
@@ -807,6 +816,7 @@ var sliders = [
     
     //Sliders for the sixth settings page
     new Slider(ScreenWidth / 2, ScreenHeight / 6 * 2, ScreenWidth / 5 * 2, ScreenWidth / 50, ScreenHeight / 25, rgb(200, 200, 200), 1, 10, "Balls", ScreenHeight / 25, "Arial", "settingsp6", "balls", 1),
+    new Slider(ScreenWidth / 2, ScreenHeight / 6 * 3, ScreenWidth / 5 * 2, ScreenWidth / 50, ScreenHeight / 25, rgb(200, 200, 200), 10, 200, "Ball Acc %", ScreenHeight / 25, "Arial", "settingsp6", "ballacc", 100),
 ];
 
 //Array storing all buttons
@@ -876,6 +886,7 @@ var textBoxes = [
     
     //Settings page 6 text boxes
     new TextBox(ScreenWidth / 2, ScreenHeight / 6, ScreenWidth / 5 * 2, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return "Number of balls";}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "settingsp6"),
+    new TextBox(ScreenWidth / 2, ScreenHeight / 6, ScreenWidth / 5 * 4, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return "Ball Acceleration";}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "settingsp6"),
     
     //Game text boxes
     new TextBox(ScreenWidth / 2, ScreenHeight / 10, ScreenWidth / 5 * 2, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return game.p2Score + " : " + game.p1Score;}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "game"),
@@ -897,7 +908,7 @@ document.getElementById("canvas").addEventListener("mouseup", release);
 window.addEventListener("keydown", function(event){pressKey(event.key)});
 window.addEventListener("keyup", function(event){releaseKey(event.key)});
 //Disable selection of canvas
-document.getElementById("canvas").onselectstart = function () { return false; };
+document.getElementById("canvas").onselectstart = function(){return false;};
 
 //Start loops
 animate(logic);
