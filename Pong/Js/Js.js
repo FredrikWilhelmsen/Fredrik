@@ -120,7 +120,7 @@ var line = function(x1, y1, x2, y2){
     canvas.moveTo(x1, y1);
     canvas.lineTo(x2, y2);
     canvas.stroke();
-}
+};
 
 var animate = window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
@@ -644,7 +644,7 @@ var draw = function(){
         balls[index].draw();
     }
     animate(draw);
-}
+};
 
 var findId = function(id){
     for(var index = 0; index < sliders.length; index++){
@@ -690,7 +690,7 @@ var logic = function(){
         balls[index].logic();
     }
     animate(logic);
-}
+};
 
 //Updates the mouse coordinates when the mouse is moved over the canvas
 var setMousePos = function(event) {
@@ -699,7 +699,7 @@ var setMousePos = function(event) {
     if(Math.round(event.clientY - rect.top) >= 0){
         MouseY = Math.round(event.clientY - rect.top);
     }
-}
+};
 
 var used = function(key, code){
     if(game.p1Up === key && code !== 1){
@@ -782,7 +782,7 @@ var release = function(){
     for(var index = 0; index < sliders.length; index++){
         sliders[index].release();
     }
-}
+};
 
 //Variable storing the balls
 var balls = [];
@@ -816,7 +816,7 @@ var sliders = [
     
     //Sliders for the sixth settings page
     new Slider(ScreenWidth / 2, ScreenHeight / 6 * 2, ScreenWidth / 5 * 2, ScreenWidth / 50, ScreenHeight / 25, rgb(200, 200, 200), 1, 10, "Balls", ScreenHeight / 25, "Arial", "settingsp6", "balls", 1),
-    new Slider(ScreenWidth / 2, ScreenHeight / 6 * 3, ScreenWidth / 5 * 2, ScreenWidth / 50, ScreenHeight / 25, rgb(200, 200, 200), 10, 200, "Ball Acc %", ScreenHeight / 25, "Arial", "settingsp6", "ballacc", 100),
+    new Slider(ScreenWidth / 2, ScreenHeight / 6 * 4, ScreenWidth / 5 * 2, ScreenWidth / 50, ScreenHeight / 25, rgb(200, 200, 200), 10, 200, "Ball Acc %", ScreenHeight / 25, "Arial", "settingsp6", "ballacc", 100),
 ];
 
 //Array storing all buttons
@@ -886,7 +886,7 @@ var textBoxes = [
     
     //Settings page 6 text boxes
     new TextBox(ScreenWidth / 2, ScreenHeight / 6, ScreenWidth / 5 * 2, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return "Number of balls";}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "settingsp6"),
-    new TextBox(ScreenWidth / 2, ScreenHeight / 6, ScreenWidth / 5 * 4, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return "Ball Acceleration";}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "settingsp6"),
+    new TextBox(ScreenWidth / 2, ScreenHeight / 6 * 3, ScreenWidth / 5 * 2, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return "Ball Acceleration";}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "settingsp6"),
     
     //Game text boxes
     new TextBox(ScreenWidth / 2, ScreenHeight / 10, ScreenWidth / 5 * 2, ScreenHeight / 10, rgb(0, 0, 0, 75), rgb(255, 255, 255), function(){return game.p2Score + " : " + game.p1Score;}, rgb(255, 255, 255), ScreenHeight / 25, "Arial", "game"),
