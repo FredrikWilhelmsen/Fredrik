@@ -1,0 +1,71 @@
+.solution {
+    display: none;
+}
+
+.task {
+    display: none;
+}
+
+#lastPage {
+    display: none;
+}
+
+.overlay {
+    display: inline-block;
+}
+
+#currentTask {
+    text-align: center;
+    font-size: 40px;
+    width: 60px;
+    height: 48px;
+    background-color: #f9932c;
+}
+
+#error {
+    background-color: #4CAF50;
+    font-size: 40px;
+    color: #4CAF50;
+    width: 50px;
+    height: 48px;
+}
+
+#overlay button {
+    background-color: #f9932c;
+    font-size: 40px;
+    border: none;
+    height: 48px;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+}
+
+img {
+    margin: 5px;
+}
+
+#templates {
+    display: none;
+}
+
+body {
+    background-color: #F8F8F8;
+    margin: 0px;
+    padding: 0px;
+}
+
+#title {
+    color: white;
+}
+
+#topbar {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.tasks {
+    padding-left: 10px;
+}

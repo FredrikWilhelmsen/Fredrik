@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Css/Css.css">
+        <title>Js Prøve</title>
+    </head>    
+    <body>
+        
+        <div id="topbar">
+            <h1 id="title">Egen Js Prøve</h1>
+
+            <div id="overlay">
+                <button id="back" class="overlay">&lt;</button>
+                <button id="forward" class="overlay">></button>
+                <div id="currentTask" class="overlay">1/0</div>
+                <div id="error" class="overlay">&nbsp;</div>
+            </div>
+        </div>
+        
+        <div class="tasks">
+        
+            <div class="task">
+
+                <h3>Oppgave 1</h3>
+                <p>Hva vil denne koden logge?</p>
+
+                <img src="Img/Oppgave%201.PNG">
+
+                <form id="radio" class="answer">
+                    <input type="radio" name="answer"> [-1, 2, 5, 8, 11] <br>
+                    <input type="radio" name="answer"> [0, 6, 12, 18, 24] <br>
+                    <input type="radio" name="answer"> [-2, 4, 10, 16, 22] <br>
+                    <input type="radio" name="answer"> Loopen vil ikke kjøre <br>
+                    <input type="radio" name="answer"> [-2, -10, -16, -22, -28] <br>
+                </form>
+
+                <div class="solution">
+                    <p>3</p>
+                </div>
+
+            </div>
+
+            <div class="task">
+
+                <h3>Oppgave 2</h3>
+                <p>På hvilken linje går det galt?</p>
+
+                <img src="Img/Oppgave%202.PNG">
+
+                <form id="number" class="answer">
+                    <input type="number">
+                </form>
+
+                <div class="solution">
+                    <p>7</p>
+                </div>
+
+            </div>
+
+            <div class="task">
+
+                <h3>Oppgave 3</h3>
+                <p>Hvilke utsagn stemmer?</p>
+
+                <img src="Img/Oppgave%203.PNG">
+
+                <form id="checkbox" class="answer">
+                    <input type="checkbox"> Det er en uendelig loop <br>
+                    <input type="checkbox"> iii vil bli 20<br>
+                    <input type="checkbox"> ooo vil bli 2^20 <br>
+                    <input type="checkbox"> ooo vil bli 20 <br>
+                    <input type="checkbox"> ooo vil bli større enn iii <br>
+                </form>
+
+                <div class="solution">
+                    <p>false</p>
+                    <p>true</p>
+                    <p>false</p>
+                    <p>false</p>
+                    <p>true</p>
+                </div>
+
+            </div>
+
+            <div class="task">
+
+                <h3>Oppgave 4</h3>
+                <p>Hva vil logges til konsollen?</p>
+
+                <img src="Img/Oppgave%204.PNG">
+
+                <form id="text" class="answer">
+                    <input type="text">
+                </form>
+
+                <div class="solution">
+                    <p>Lemon</p>
+                </div>
+
+            </div>
+
+            <div class="task">
+
+                <h3>Oppgave 5</h3>
+                <p>Hva vil logges til konsollen?</p>
+
+                <img src="Img/Oppgave%205.PNG"> <br>
+
+                <select id="dropdown" class="answer">
+                    <option value="1">Red</option>
+                    <option value="2">Yellow</option>
+                    <option value="3">Green</option>
+                    <option value="4">Purple</option>
+                    <option value="5">Cyan</option>
+                </select>
+
+                <div class="solution">
+                    <p>4</p>
+                </div>
+
+            </div>
+
+            <div id="lastPage">
+
+                <h3>Congratulations, you did it!</h3>
+
+            </div>
+            
+        </div>
+        
+        <script src="Js/Script.js"></script>
+        
+    </body>
+</html>
