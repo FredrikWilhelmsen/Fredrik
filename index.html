@@ -1,106 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Fredrik IT2</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Hjem</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="Calculator/index.html">Kalkulator</a>
-                    </li>
-                    <li>
-                        <a href="TorsFlyreiser/index.html">Tors Flyreiser</a>
-                    </li>
-                    <li>
-                        <a href="Pong/index.html">Pong</a>
-                    </li>
-                    <li>
-                        <a href="Farge/index.html">Farge</a>
-                    </li>
-                    <li>
-                        <a href="Kommentarfelt/index.html">Kommentarfelt</a>
-                    </li>
-                    <li>
-                        <a href="Egen%20pr%C3%B8ve/index.html">Egen Prøve</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Css/navbar.css">
+        <link rel="stylesheet" href="Css/index.css">
+        <title>Fredrik IT2</title>
+    </head>    
+    <body>        
+        <div id="navbar">
+            <ul id="bar">
+                <li><a href="#" class="active">Info</a></li>
+                <li><a href="Calculator/index.html">Kalkulator</a></li>
+                <li><a href="TorsFlyreiser/index.html">Tors Flyreiser</a></li>
+                <li><a href="Pong/index.html">Pong</a></li>
+                <li><a href="Farge/index.html">Farge</a></li>
+                <li><a href="Kommentarfelt/index.html">Kommentarfelt</a></li>
+                <li><a href="Egen%20pr%C3%B8ve/index.html">Egen Prøve</a></li>
+            </ul>
+            <img id="navbtn" src="Img/navbtn.png">
         </div>
-        <!-- /.container -->
-    </nav>
+        
+        <div id="block">
+            <h1>Fredrik Wilhelmsen</h1>
 
-    <!-- Page Content -->
-    <div class="container">
+            <div>
+                <h2>Tidlig programmering</h2>
+                <p>
+                    Jeg begynte først med programmering på ungdomsskolen, kun lett konsoll basert Javascript via CodeCademy. Ble litt demotivert, så jeg holdt ikke på lenge. Når jeg begynte på Videregående fortsatte jeg med Javascript.
+                </p>
+            </div>
 
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Fredrik Wilhelmsen</h1>
+            <div>
+                <h2>Videregående</h2>
+                <p>
+                    Etter en stund med Javascript i VG2 begynte jeg med C++ i fritiden. Da leste jeg på Learncpp.com. Jeg jobbet med det i ca 6 mnd. Da begynte vi med Javascript med ProcessingJS på Khanacademy i Teknologi og forskningslære X. Deretter byttet jeg Fysikk mot IT2 i VG3.
+                </p>
             </div>
         </div>
         
-        <div class="row" id="Kunskap">
-            <div class="col-sm-6">
-                <h3>Tidlig programmering</h3>
-                <p>
-                    Jeg begynte først med programmering på ungdomsskolen, kun lett Javascript via CodeCademy. Ble litt demotivert, så jeg holdt ikke på lenge. Når jeg begynte på Videregående fortsatte jeg med Javascript.
-                </p>
-            </div>
-
-            <div class="col-sm-6">
-                <h3>Videregående</h3>
-                <p>
-                    Etter en stund med Javascript i VG2 begynte jeg med C++ i fritiden. Da leste jeg på Learncpp.com. Jeg jobbet med det i ca 6 mnd. Da begynte vi med Javascript med ProcessingJS på Khanacademy i Teknologi og forskningslære X. Deretter beyttet jeg Fysikk mot IT2 i VG3.
-                </p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+        <script src="Js/navbar.js"></script>
+        
+    </body>
 </html>

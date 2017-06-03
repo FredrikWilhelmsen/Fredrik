@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+@keyframes hide {
+    0% {
+        width: 15%;
+    }
+    
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes show {
+    0% {
+        width: 0%;
+    }
+    
+    100% {
+        width: 15%;
+    }
+}
+
+@keyframes removeMargin {
+    0% {
+        margin-left: 15%;
+    }
+    
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes resetMargin {
+    0% {
+        margin-left: 0%;
+    }
+    
+    100% {
+        margin-left: 15%;
+    }
+}
+
+@keyframes removeMargin2 {
+    0% {
+        margin-left: 20%;
+    }
+    
+    100% {
+        margin-left: 5%;
+    }
+}
+
+@keyframes resetMargin2 {
+    0% {
+        margin-left: 5%;
+    }
+    
+    100% {
+        margin-left: 20%;
+    }
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#navbar ul:hover {
+    overflow: auto;
+}
+
+#navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navHeader {
+    background-color: #4fa7f9;
+}
+
+.activeNavHeader {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#navbtn {
+    width: 32px;
+    margin-left: 15%;
+    padding: 2px 5px;
+    position: fixed;
+}
+
+#block {
+    margin-left: 20%;
+    padding: 2px 45px;
+    width: 750px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.hide {
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.removeMargin {
+    animation-name: removeMargin;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.resetMargin {
+    animation-name: resetMargin;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.removeMargin2 {
+    animation-name: removeMargin2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.resetMargin2 {
+    animation-name: resetMargin2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
